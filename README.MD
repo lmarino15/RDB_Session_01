@@ -9,7 +9,7 @@ Web page oriented and used with the FlowBite theme to show the characteristics o
 
 ## 👥 Collaborators
 - Leonardo Mariño (lmarino15)
-> Encargado de la maquetación en HTML
+> Encargado de la maquetación en HTML \
 > Encargado del estilo de la maqueta en CSS
 
 ## Preview page
