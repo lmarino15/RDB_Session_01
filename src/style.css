@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+    --title: #ffffff;
+    --bgc_body: #111827;
+    --text: #9ca3af;
+    --bg_icon: #164e63;
+    --icon: #67e8f9;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -7,7 +15,7 @@
 }
 
 body {
-    background-color: #111827;
+    background-color: var(--bgc_body);
 }
 
 .header {
@@ -16,21 +24,21 @@ body {
 }
 
 .header h2 {
-    color: #fff;
+    color: var(--title);
     font-size: 36px;
     line-height: 40px;
 }
 
 .header p {
-    color: #9ca3af;
+    color: var(--text);
     font-size: 20px;
     line-height: 28px;
 }
 
 .container {
     padding: 8px 4px 8px 4px;
-    max-width: auto;
     max-width: 1280px;
+    margin: auto;
 }
 
 .container-box {
@@ -51,34 +59,48 @@ body {
     align-items: center;
     justify-content: center;
 
-    background-color: #164e63;
+    background-color: var(--bg_icon);
     border-radius: 50%;
 }
 
 svg { 
     width: 24px;
-    color: #67e8f9;
+    color: var(--icon);
 }
 
 .box h3 {
-    color: white;
+    color: var(--title);
     font-size: 20px;
     line-height: 28px;
     margin: 10px 0;
 }
 
 .box p {
-    color: #9ca3af;
+    color: var(--text);
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1024px) {
     .container-box {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 640px) {
     .container-box {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
